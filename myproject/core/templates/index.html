@@ -3,10 +3,13 @@
 {% block content %}
 
 <div class="jumbotron">
-  <div class="container">
-    <h1>Bem-vindo ao sistema de Indicação de Imóveis</h1>
-    <p>Esse é o começo de grandes coisas que irão surgir!</p>
-  </div>
+  <h1 class="display-4">Bem-vindo ao Sistema de Indicação de Imóveis</h1>
+  <p class="lead">Esse é apenas o começo de grandes coisas que irão surgir em 2023!</p>
+  <hr class="my-4">
+  <p>Faça agora a sua indicação.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Indicar Imóvel</a>
+  </p>
 </div>
 
 <div>
@@ -32,7 +35,7 @@
       </tbody>
     </table>
   {% else %}
-    <p class="alert alert-warning">Sem itens na lista</p>
+    <p class="alert alert-warning">Sem imóveis cadastrados!</p>
   {% endif %}
 </div>
 
