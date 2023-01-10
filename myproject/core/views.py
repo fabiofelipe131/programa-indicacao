@@ -7,3 +7,9 @@ def index(request):
     context = {'object_list': users}
     template_name = 'index.html'
     return render(request, template_name, context)
+
+def indicar(request):
+    users = User.objects.all()
+    context = {'object_list': users}
+    template_name = 'indicar.html'
+    return render(request, template_name, context)
